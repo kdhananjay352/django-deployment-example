@@ -1,0 +1,47 @@
+{% extends "AppOne\base.html" %}
+{% load static %}
+{% block body_block %}
+    <h1> HELLO WORLD!</h1>
+    <h4> {{ insert_text }} </h4>
+    {% if user.is_authenticated %}
+        <p>Welcome, {{ user.username|title }}, this is your table. </p>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr class="">
+                    <th scope="col">#</th>
+                    <th scope="col">Column1</th>
+                    <th scope="col">Column2</th>
+                    <th scope="col">Column3</th>
+                </tr>
+            </thead>
+            <tr>
+                <th scope="row">1</th>
+                <td> Data1 </td>
+                <td> Data2 </td>
+                <td> Data3 </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td> Data4 </td>
+                <td> Data5 </td>
+                <td> Data6 </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td> Data4 </td>
+                <td> Data5 </td>
+                <td> Data6 </td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td> Data4 </td>
+                <td> Data5 </td>
+                <td> Data6 </td>
+            </tr>
+        </table>
+
+    {% endif %}
+    
+{% endblock  %}
+
+

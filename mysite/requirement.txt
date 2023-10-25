@@ -2,3 +2,12 @@ bcrypt
 argon2-cffi
 colorama
 Pillow
+asgiref
+Django
+gunicorn
+packaging
+pip
+setuptools
+sqlparse
+typing-extensions
+wheel        
